@@ -1,0 +1,52 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html,body{
+  background-color: rgb(168, 0, 0);
+  overflow: hidden;
+  height: 100%;
+}
+.header{
+  height: 10vh;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.nav-bar{
+  display: flex;
+  width: 400px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.nav-bar a {
+  color: whitesmoke;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-bar div:hover {
+ 
+}
+
+.icon-logo{
+  border-radius: 50%;
+}
+.chicken-logo{
+  width: 50px;
+}
+.section {
+  display: none;
+}
+
+.section.active {
+  display:block;
+}

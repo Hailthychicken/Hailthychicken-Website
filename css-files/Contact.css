@@ -1,0 +1,78 @@
+#Contact{
+padding: 80px 260px 80px 260px;
+}
+.Contact-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7.5vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(15, 14, 14);
+  
+}
+.Contact-box h1 a{
+font-size: large;
+font-weight: bold;
+color: white;
+text-decoration: none;
+}
+.Contact-box img{
+  width: 40px;
+}
+#linkiden{
+  opacity: 0;
+  animation: leftmove 1.5s ease forwards;
+}
+#gmail{
+  opacity: 0;
+  animation: rightmove 1.5s ease forwards;
+}
+#whatsapp{
+  opacity: 0;
+  animation: leftmove 1.5s 1s ease forwards;
+}
+#phone-no{
+  opacity: 0;
+  animation: rightmove 1.5s 1s ease forwards;
+}
+#youtube{
+  opacity: 0;
+  animation: leftmove 1.5s 2s ease forwards;
+}
+#facebook{
+  opacity: 0;
+  animation: rightmove 1.5s 2s ease forwards;
+}
+
+
+
+@keyframes leftmove{
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes rightmove{
+  0%{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
