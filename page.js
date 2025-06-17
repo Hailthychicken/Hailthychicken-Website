@@ -1,4 +1,6 @@
-// script.js
+const featured_Projects= document.getElementById('featured_projects');
+
+let projects=[];
 document.querySelectorAll('.nav-bar a').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
@@ -15,4 +17,16 @@ document.querySelectorAll('.nav-bar a').forEach(link => {
     document.getElementById(targetId).classList.add('active');
   });
 });
+
+fetch("projects.json").then(res=>{
+  return res.json();
+}).then(loadedprojects=>{
+projects=loadedprojects;
+console.log(projects);
+FeaturedProjects()
+})
+
+FeaturedProjects = ()=>{
+  featured_Projects.setAttribute('href', `${projects[Math.floor(Math.random() * projects.length)]}`)
+}
 
