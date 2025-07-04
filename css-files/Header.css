@@ -4,7 +4,7 @@
 }
 
 html,body{
-  background-color: rgb(168, 0, 0);
+  background-image: radial-gradient(ellipse at bottom, #f50000 0%,#581a1a 100%);
   overflow: hidden;
   height: 100%;
 }
